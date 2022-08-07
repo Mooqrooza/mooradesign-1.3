@@ -1,5 +1,4 @@
-import { db, collection, getDocs } from './firebase';
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
+import { db, collection, getDocs, getStorage, ref, getDownloadURL } from './firebase';
 
 class Services {
 

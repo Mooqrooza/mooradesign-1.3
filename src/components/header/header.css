@@ -1,0 +1,10 @@
+/* Header elements */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 300px;
+  height: 194px;
+  overflow: hidden;
+  z-index: 100;
+}

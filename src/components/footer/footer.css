@@ -1,0 +1,262 @@
+footer {
+  position: absolute;
+  width: 100%;
+  min-width: 300px;
+  height: 100px;
+  bottom: 0;
+}
+
+footer a {
+  color: #c0c0c0;
+  padding: 0 10px 0 0;
+}
+
+footer.lessWidth600 p {
+  padding: 0 4px;
+  font-size: 15px;
+  min-width: 20px;
+  letter-spacing: 0;
+}
+
+footer.lessWidth600 .footer-lines {
+  width: 40%;
+}
+
+.footer-wrap p {
+  display: inline-block;
+  margin: 0 auto;
+  opacity: 0;
+  padding: 0 0 0 20px;
+  font-size: 16px;
+  color: #d2d2d2;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.footer-wrap p.firstAnimate {
+  -webkit-animation: footer-animate-1 2s 0s 1 forwards;
+  animation: footer-animate-1 2s 0s 1 forwards;
+}
+
+.footer-wrap p.loopAnimate {
+  opacity: 1;
+}
+
+@-webkit-keyframes footer-animate-1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes footer-animate-1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.copyright-txt {
+  opacity: 0;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #c93131;
+}
+
+.footer-lines {
+  position: relative;
+  margin: 0 auto;
+  height: 20px;
+  width: 290px;
+}
+
+.footer-lines g:nth-child(1).firstAnimate {
+  -webkit-animation: f-line-firstAnimate-animate1 1.1s 0s 1 forwards linear;
+  animation: f-line-firstAnimate-animate1 1.1s 0s 1 forwards linear;
+}
+
+@-webkit-keyframes f-line-firstAnimate-animate1 {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+
+  68% {
+    -webkit-transform: scaleX(0.28);
+    transform: scaleX(0.28);
+  }
+
+  90% {
+    -webkit-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+
+  94% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes f-line-firstAnimate-animate1 {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+
+  68% {
+    -webkit-transform: scaleX(0.28);
+    transform: scaleX(0.28);
+  }
+
+  90% {
+    -webkit-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+
+  94% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.footer-lines g:nth-child(2).firstAnimate {
+  -webkit-animation: f-line-firstAnimate-animate2 1.1s 0s 1 forwards linear;
+  animation: f-line-firstAnimate-animate2 1.1s 0s 1 forwards linear;
+}
+
+@-webkit-keyframes f-line-firstAnimate-animate2 {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.3;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0.2;
+  }
+
+  68% {
+    -webkit-transform: scaleX(0.28);
+    transform: scaleX(0.28);
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0.2;
+  }
+
+  74% {
+    opacity: 0.2;
+  }
+
+  90% {
+    -webkit-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+
+  94% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes f-line-firstAnimate-animate2 {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.3;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0.2;
+  }
+
+  68% {
+    -webkit-transform: scaleX(0.28);
+    transform: scaleX(0.28);
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0.2;
+  }
+
+  74% {
+    opacity: 0.2;
+  }
+
+  90% {
+    -webkit-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+  }
+
+  94% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.footer-react-link-1 {
+  padding: 40px 0 0 0;
+}
+
+.footer-react-link-1 a {
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+  background: url(./media/react-engine-1.png) no-repeat center;
+}
+
+.footer-react-link-1.firstAnimate {
+  opacity: 1;
+  -webkit-transition: opacity 1s 0s;
+  transition: opacity 1s 0s;
+}

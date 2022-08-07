@@ -1,0 +1,32 @@
+.explosion-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #ca3232;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.explosion-screen.shot {
+  animation: explosion-screen-animate-1 1.5s 0s 1;
+}
+
+@keyframes explosion-screen-animate-1 {
+  0% { visibility: visible; opacity: 1; }
+  1% { opacity: 1; }
+  3.01% { opacity: 0.4; }
+  3% { opacity: 0.4; }
+  5.01% { opacity: 1; }
+  7% { opacity: 1; }
+  7.01% { opacity: 0.6; }
+  9% { opacity: 0.6; }
+  9.01% { opacity: 1; }
+  11% { opacity: 1; }
+  15% { opacity: 0; }
+  16% { opacity: 0.6; }
+  99.9% { visibility: visible; opacity: 0;}
+  100% { visibility: hidden; opacity: 0;}
+}

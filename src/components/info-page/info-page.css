@@ -1,0 +1,56 @@
+.info-page {
+  position: absolute;
+  visibility: hidden;
+  min-width: 300px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ca3232;
+  z-index: 999;
+}
+
+.info-page.show {
+  visibility: visible;
+}
+
+.info-page.hide{
+  visibility: hidden;
+}
+
+.ip-content {
+  position:relative;
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  min-height:300px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ip-text-wrapper{
+  position: relative;
+  margin:0 auto;
+  max-width: 400px;
+}
+
+.ip-text-1 {
+  display: inline-block;
+  text-align: left;
+  font-size: 26px;
+  font-weight: lighter;
+  padding: 0 8% 20px 8%;
+}
+
+.ip-text-1.lessWidth500 {
+    font-size: 18px;
+}
+
+.ip-text-1  span {
+  font-size: 26px;
+}
+
+.ip-text-1.lessWidth500 span {
+  font-size: 20px;
+}

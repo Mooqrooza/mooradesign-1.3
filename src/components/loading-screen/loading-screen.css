@@ -1,0 +1,140 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  z-index: 997;
+  background-color: #000;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loading-screen.hidden {
+  animation: ls-hide-animate-1 2s 0s 1 forwards;
+}
+
+@keyframes ls-hide-animate-1 {
+  0% { opacity: 1; visibility: visible; }
+  99.9% { opacity: 0; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  width: 300px;
+  height: 300px;
+}
+
+.loading-indicator.hidden {
+  opacity: 0;
+  transition: opacity 0.5s 0s;
+}
+
+.loading-indicator > div > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c93131;
+}
+
+.loading-indicator > :nth-child(1) {
+  position: absolute;
+  top: 140px;
+  left: 116px;
+  width: 68px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.loading-indicator > :nth-child(2) {
+  position: absolute;
+  top: 160px;
+  left: 116px;
+  width: 68px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.loading-indicator > :nth-child(3) {
+  position: absolute;
+  top: 116px;
+  left: 140px;
+  width: 2px;
+  height: 68px;
+  overflow: hidden;
+}
+
+.loading-indicator > :nth-child(4) {
+  position: absolute;
+  top: 116px;
+  left: 160px;
+  width: 2px;
+  height: 68px;
+  overflow: hidden;
+}
+
+.loading-indicator> :nth-child(1) > div {
+  height: 100%;
+  width: 0;
+  -webkit-animation: ls-indicator-animate-1 1.18s infinite;
+  animation: ls-indicator-animate-1 1.18s infinite;
+}
+
+.loading-indicator> :nth-child(2) > div {
+  height: 100%;
+  width: 0;
+  animation: ls-indicator-animate-2 1.18s infinite;
+}
+
+.loading-indicator> :nth-child(3)>div {
+  height: 0;
+  width: 100%;
+  animation: ls-indicator-animate-3 1.18s infinite;
+}
+
+.loading-indicator> :nth-child(4)>div {
+  height: 0;
+  width: 100%;
+  animation: ls-indicator-animate-4 1.18s infinite;
+}
+
+@keyframes ls-indicator-animate-1 {
+  0% { width: 0; left: 0;}
+  28% { width: 100%; left: 0;}
+  50% { width: 100%; left: 90%;}
+  62% { width: 100%; left: 100%;}
+  100% { width: 100%; left: 100%;}
+}
+
+@keyframes ls-indicator-animate-2 {
+  0% { width: 0; left: 0; }
+  20% { width: 0; left: 0; }
+  58% { width: 100%; left: 0; opacity: 1; }
+  92% { width: 100%; left: 90%; }
+  100% { width: 100%; left: 100%; opacity: 0.2; }
+}
+
+@keyframes ls-indicator-animate-3 {
+  0% { height: 0; top: 0; }
+  14% { height: 0; top: 0; }
+  30% { height: 20; top: 0; }
+  46% { height: 100%; top: 0; }
+  65% { height: 90%; top: 90%; }
+  78% { height: 100%; top: 100%; }
+  100% { height: 100%; top: 100%; }
+}
+
+@keyframes ls-indicator-animate-4 {
+  0% { height: 0; top: 0; }
+  30% { height: 0; top: 0; }
+  34% { height: 24%; top: 0; }
+  56% { height: 100%; top: 0; opacity: 1; }
+  100% { height: 100%; top: 100%; opacity: 0.2; }
+}

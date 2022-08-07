@@ -1,0 +1,212 @@
+.pp-label {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 60px;
+  padding: 80px 0px 8px 10px;
+  font-size: 26px;
+  color: #000;
+  line-height: 60px;
+  letter-spacing: 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.pp-label.lessWidth800 {
+  line-height: 30px;
+  padding: 90px 0px 24px 10px;
+}
+
+.pp-label-lines {
+  position: relative;
+  margin: 0 auto;
+  top: -8px;
+  width: 88%;
+  max-width: 400px;
+  height: 15px;
+  z-index: 1050;
+}
+
+.pp-label-lines.lessWidth800 {
+  width: 50%;
+}
+
+.pp-label-line1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+.pp-label-line1.show {
+  -webkit-animation: pp-label-line-animate1 0.5s 0.2s 1 forwards linear;
+  animation: pp-label-line-animate1 0.5s 0.2s 1 forwards linear;
+}
+
+.pp-label-line1.hide {
+  -webkit-animation: pp-label-line-animate1a 0.6s 0s 1 forwards;
+  animation: pp-label-line-animate1a 0.6s 0s 1 forwards;
+}
+
+@-webkit-keyframes pp-label-line-animate1 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  70% {
+    width: 98%;
+  }
+
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes pp-label-line-animate1 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  70% {
+    width: 98%;
+  }
+
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes pp-label-line-animate1a {
+  0% {
+    width: 100%;
+    left: 0;
+  }
+
+  70% {
+    width: 4%;
+    left: -50px;
+  }
+
+  100% {
+    width: 0;
+    left: -60px;
+  }
+}
+
+@keyframes pp-label-line-animate1a {
+  0% {
+    width: 100%;
+    left: 0;
+  }
+
+  70% {
+    width: 4%;
+    left: -50px;
+  }
+
+  100% {
+    width: 0;
+    left: -60px;
+  }
+}
+
+.pp-label-line2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+.pp-label-line2.show {
+  -webkit-animation: pp-label-line-animate2 0.6s 0.2s 1 forwards linear;
+  animation: pp-label-line-animate2 0.6s 0.2s 1 forwards linear;
+}
+
+.pp-label-line2.hide {
+  -webkit-animation: pp-label-line-animate2a 0.35s 0.1s 1 forwards;
+  animation: pp-label-line-animate2a 0.35s 0.1s 1 forwards;
+}
+
+@-webkit-keyframes pp-label-line-animate2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  35% {
+    width: 40px;
+    left: 100%;
+  }
+
+  70% {
+    width: 4px;
+    left: 115%;
+  }
+
+  100% {
+    width: 0;
+    left: 120%;
+  }
+}
+
+@keyframes pp-label-line-animate2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  35% {
+    width: 40px;
+    left: 100%;
+  }
+
+  70% {
+    width: 4px;
+    left: 115%;
+  }
+
+  100% {
+    width: 0;
+    left: 120%;
+  }
+}
+
+@-webkit-keyframes pp-label-line-animate2a {
+  0% {
+    width: 20px;
+    left: 110%;
+  }
+
+  70% {
+    width: 10px;
+    left: 10%;
+  }
+
+  100% {
+    width: 0;
+    left: 0;
+  }
+}
+
+@keyframes pp-label-line-animate2a {
+  0% {
+    width: 20px;
+    left: 110%;
+  }
+
+  70% {
+    width: 10px;
+    left: 10%;
+  }
+
+  100% {
+    width: 0;
+    left: 0;
+  }
+}

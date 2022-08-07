@@ -1,0 +1,85 @@
+.ip-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ip-face-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -780px 0 0 -879px;
+  width: 1758px;
+  height: 1358px;
+}
+
+.ip-face-container.lessWidth800-lessHeight700 {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  top: -400px;
+  margin: 0 0 0 -879px;
+}
+.ip-face-container.lessWidth500-lessHeight1000 {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  top: -200px;
+  margin: 0 0 0 -890px;
+}
+.ip-face-container.lessWidth1000-lessHeight600 {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  top: -400px;
+  margin: 0 0 0 -890px;
+}
+
+.ip-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: url(./media/info-page-face.jpg) no-repeat; background-position:center;
+}
+
+
+.ip-face.show {
+  -webkit-animation: ip-face-show-animate 3s 0s 1 forwards;
+          animation: ip-face-show-animate 3s 0s 1 forwards;
+}
+@-webkit-keyframes ip-face-show-animate {
+  0%{ -webkit-transform: scale(0.92); transform: scale(0.92); opacity:0; }
+  35%{ -webkit-transform: scale(0.98); transform: scale(0.98); opacity:1; }
+  100%{-webkit-transform: scale(1);transform: scale(1); opacity:1;}
+}
+@keyframes ip-face-show-animate {
+  0%{ -webkit-transform: scale(0.92); transform: scale(0.92); opacity:0; }
+  35%{ -webkit-transform: scale(0.98); transform: scale(0.98); opacity:1; }
+  100%{-webkit-transform: scale(1);transform: scale(1); opacity:1;}
+}
+
+.ip-face.hide {
+  -webkit-animation: ip-face-hide-animate 1.2s 0s 1 forwards;
+          animation: ip-face-hide-animate 1.2s 0s 1 forwards;
+}
+@-webkit-keyframes ip-face-hide-animate {
+  0%{ -webkit-transform: scale(1); transform: scale(1); opacity:0.3;}
+  2%{ -webkit-transform: scale(0.96); transform: scale(0.96); opacity:0.8;}
+  4%{ -webkit-transform: scale(0.98s); transform: scale(0.98s); }
+  8%{  opacity:0.4;}
+  10%{  opacity:0.7;}
+  100%{-webkit-transform: scale(0.94);transform: scale(0.94); opacity:0;}
+}
+@keyframes ip-face-hide-animate {
+  0%{ -webkit-transform: scale(1); transform: scale(1); opacity:0.3;}
+  2%{ -webkit-transform: scale(0.96); transform: scale(0.96); opacity:0.8;}
+  4%{ -webkit-transform: scale(0.98s); transform: scale(0.98s); }
+  8%{  opacity:0.4;}
+  10%{  opacity:0.7;}
+  100%{-webkit-transform: scale(0.94);transform: scale(0.94); opacity:0;}
+}

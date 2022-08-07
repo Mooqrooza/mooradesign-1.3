@@ -1,0 +1,11 @@
+.pp-content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+}
+
+.pp-content.lessWidth1010 img {
+  width: 90%;
+}

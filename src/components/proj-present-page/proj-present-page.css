@@ -1,0 +1,27 @@
+.proj-present-page {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7fdfd;
+  z-index: 999;
+}
+
+.proj-present-page.show {
+  visibility: visible;
+}
+
+.proj-present-page.hide { visibility: hidden; }
+
+.pp-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+  text-align: center;
+}

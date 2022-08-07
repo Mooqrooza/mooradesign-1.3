@@ -1,0 +1,59 @@
+.red-button-lines {
+  position: relative;
+  margin: 0 auto;
+  width: 16%;
+  min-width: 180px;
+  height: 40px;
+}
+
+.red-button-lines svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.red-button-lines g:nth-child(1).firstAnimate {
+  animation: rb-lines-animate1 1.4s 0s 1 forwards linear;
+}
+
+
+.red-button-lines g:nth-child(2).firstAnimate {
+  animation: rb-lines-animate2 1.4s 0s 1 forwards linear;
+}
+
+.red-button-lines g:nth-child(3).firstAnimate {
+  animation: rb-lines-animate3 1.4s 0s 1 forwards linear;
+}
+
+
+.red-button-lines g:nth-child(4).firstAnimate {
+  animation: rb-lines-animate4 1.4s 0s 1 forwards;
+}
+
+
+@keyframes rb-lines-animate1{
+  0%{ transform: scaleX(0) translateX(0); } 18%%{ transform: scaleX(0.4) translateX(-60%); }
+  22%{ transform: scaleX(1) translateX(-100%); } 22.01%{ transform: scaleX(0) translateX(0); }
+  30%{ transform: scaleX(0.4) translateX(-60%); } 34%{ transform: scaleX(1) translateX(-100%); }
+  34.01%{ transform: scaleX(0) translateX(0); } 60%{ transform: scaleX(0.3) translateX(0); }
+  70%{ transform: scaleX(1) translateX(0); }
+}
+
+@keyframes rb-lines-animate2{
+  0%{ transform: scaleX(0) translateX(0); } 10%%{ transform: scaleX(0.3) translateX(60%); }
+  30%{ transform: scaleX(1) translateX(100%); } 30.01%{ transform: scaleX(0) translateX(0); }
+  80%{ transform: scaleX(0.4) translateX(0); } 86%{ transform: scaleX(0.98) translateX(0); }
+  100%{ transform: scaleX(1) translateX(0); }
+}
+
+@keyframes rb-lines-animate3{
+  0%{ transform: translateY(-100%); } 20%{ transform: translateY(100%); }
+  20.01%{ transform: translateY(-100%); }100%{ transform: translateY(0); }
+}
+
+@keyframes rb-lines-animate4{
+  0%{ transform: translateX(-100%); opacity: 0; } 30%{ transform: translateX(0); opacity:1; }
+  70%{ transform: translateX(100%); opacity: 0.4; } 70.01%{ transform: translateX(-100%); }
+  100%{ transform: translateX(20%); opacity: 0; }
+}

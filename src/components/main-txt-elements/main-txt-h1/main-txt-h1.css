@@ -1,0 +1,44 @@
+.main-txt-1 {
+  letter-spacing: 14px;
+  text-align: center;
+  font-size: 25px;
+  padding: 0 0 0 20px;
+  opacity: 0;
+}
+.main-txt-1.lessWidth600 {
+  letter-spacing: 16px;
+  font-size: 22px;
+  padding: 0 10%;
+}
+.main-txt-1.firstAnimate {
+  animation: mt-animate-1 1.8s 0.7s 1 forwards;
+}
+.main-txt-1.loopAnimate { opacity: 1; }
+@keyframes mt-animate-1 {
+  100% { opacity: 1; }
+}
+
+.main-bad-txt-1 {
+  text-align: center;
+  padding: 0 0 0 20px;
+  opacity: 1;
+}
+
+.main-bad-txt-1.lessWidth600 {
+  letter-spacing: 12px;
+  font-size: 24px;
+  padding: 0 8%;
+}
+.bad-word-group{
+  white-space: nowrap;
+}
+.bad-word {
+  transform-origin: 50%;
+  padding: 0 7px;
+  font-size: 24px;
+  color: #bf312e;
+}
+.bad-word.lessWidth600 {
+  font-size: 22px;
+  padding: 0 0;
+}

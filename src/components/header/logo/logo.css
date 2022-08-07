@@ -1,0 +1,109 @@
+.logo-place {
+  position: absolute;
+  margin-left: -150px;
+  margin-top: -70px;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 140px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.logo.destroyed{
+  cursor: default;
+}
+.logo.destroyed :last-child {
+  -webkit-transform-origin: 150px 96px;
+  animation: logo-destroyed-animate-1 0.8s 0s 1 forwards;
+}
+
+@keyframes logo-destroyed-animate-1 {
+  0% { transform: rotate(0); fill: #891818; }
+  62%  { fill: #2d2d2d}
+  64%  { fill: #891818;}
+  66%  { fill: #ffffff;}
+  68%  {  fill: #2d2d2d }
+  100% { fill: #2d2d2d }
+}
+
+.logo.destroyed :nth-last-child(2) {
+  -webkit-transform-origin: 150px 96px;
+  animation: logo-destroyed-animate-2 1s 0s 1 forwards;
+}
+
+@keyframes logo-destroyed-animate-2 {
+  0% { transform: rotate(8deg); fill: #891818; }
+  10% { transform: rotate(0deg); }
+  40% {  fill: #891818; }
+  42% {  fill: #232323; }
+  43% {  fill: #891818; }
+  44% {  fill: #ffffff; }
+  46% {  fill: #891818; }
+  100% { transform: rotate(0deg); fill: #232323 }
+}
+
+.logo.destroyed > g > * {
+  animation: logo-destroyed-animate-3 2s 0s 1 forwards;
+}
+
+@keyframes logo-destroyed-animate-3 {
+  0% { fill: #891818; }
+  40% {  fill: #891818; }
+  42% {  fill: #454545; }
+  43% {  fill: #891818; }
+  44% {  fill: #454545; }
+  46% {  fill: #891818; }
+  100% { fill: #454545 }
+}
+
+.logo.kick g:nth-child(1) {
+  -webkit-transform-origin: 150px 96px;
+  transform-origin: 150px 96px;
+  animation: logo-kick-animate-1 0.5s 0.06s 1 forwards;
+}
+
+.logo.next-kick g:nth-child(1) {
+  -webkit-transform-origin: 150px 96px;
+  transform-origin: 150px 96px;
+  animation: logo-kick-animate-2 0.5s 0.06s 1 forwards;
+}
+
+.logo.kick g:nth-child(2) {
+  -webkit-transform-origin: 150px 96px;
+  transform-origin: 150px 96px;
+  animation: logo-kick-animate-1 0.5s 0s 1 forwards;
+}
+
+.logo.next-kick g:nth-child(2) {
+  -webkit-transform-origin: 150px 96px;
+  transform-origin: 150px 96px;
+  animation: logo-kick-animate-2 0.5s 0s 1 forwards;
+}
+
+@keyframes logo-kick-animate-1 {
+  0% { transform: rotate(0); }
+  5% { transform: rotate(-10deg); }
+  10% { transform: rotate(8deg); }
+  15% { transform: rotate(-4deg); }
+  20% { transform: rotate(2deg); }
+  25% { transform: rotate(0); }
+
+  83% { transform: rotate(0);}
+}
+
+
+@keyframes logo-kick-animate-2 {
+  0% { transform: rotate(0); }
+  3% { transform: rotate(4deg); }
+  6% { transform: rotate(-2deg); }
+  10% { transform: rotate(4deg); }
+  14% { transform: rotate(-1deg); }
+  18% { transform: rotate(0); }
+  83% { transform: rotate(0);}
+}

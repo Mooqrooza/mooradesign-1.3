@@ -1,0 +1,53 @@
+/* Main text elements */
+.main-txt-place {
+  position: relative;
+  padding: 170px 0 0 0;
+  width: 100%;
+  min-width: 300px;
+  min-height: 38px;
+  z-index: 99;
+}
+
+.main-txt-place.lessWidth600 {
+  padding: 160px 0 20px 0;
+  min-height: 40px;
+}
+
+.main-txt-place> :nth-child(1),
+.main-txt-place> :nth-child(3) {
+  position: relative;
+  display: inline-block;
+  min-width: 1px;
+  min-height: 1px;
+  max-width: 100%;
+}
+
+.main-txt-2 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 15px;
+  padding: 0 0 0 4px;
+  opacity: 0;
+}
+
+.main-txt-2.lessWidth600 {
+  padding: 0 10%;
+}
+
+
+.main-txt-2.firstAnimate {
+  animation: mt-animate-2 1s 0.8s 1 forwards;
+}
+
+@keyframes mt-animate-2 {
+  0%{ opacity: 0; ; }
+  40% { opacity: 0.2; }
+  41% { opacity: 0; }
+  42% { opacity: 0; }
+  45% { opacity: 1; }
+  46% { opacity: 0; }
+  47% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.main-txt-2.loopAnimate { opacity: 1; }
